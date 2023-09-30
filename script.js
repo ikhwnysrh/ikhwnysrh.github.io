@@ -4,8 +4,8 @@ window.onscroll = function () {
 
   function scrollFunction() {
     if (
-      document.body.scrollTop > 50 ||
-      document.documentElement.scrollTop > 50
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
     ) {
       document.getElementById("navbar").style.backgroundColor = "rgba(255, 255, 255, 0.8)";
       document.getElementById("navbar").style.backdropFilter = "blur(3px)";
