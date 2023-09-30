@@ -1,0 +1,56 @@
+#about{
+    color: #fff;
+    background-image: url(/pics/gallery/bg-about.jpg);
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+#navbar{
+    margin-top: 12px;
+}
+
+.home{
+    padding-top: 110px;
+    padding-bottom: 190px;
+}
+
+.btn{
+    background-color: #00e8ff;
+}
+.btn:hover{
+    background-color: #9cf7ff;
+}
+/* .btn {
+    background-color: #e3f2fd;
+}
+
+.btn:hover {
+    background-color: #cde6f8;
+} */
+
+#journey {
+    padding-bottom: 1rem;
+}
+.button a{
+    transition: ease-in-out;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    background: #00e8ff;
+    padding: 7px 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+}
+.button a:hover{
+    background-color: #9cf7ff;
+}
+div ul .nav-item a:hover{
+    color: #00e8ff;
+}

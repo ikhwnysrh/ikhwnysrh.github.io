@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our Portfolio | Kelompok 2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bolder" href="#"
+          >Klp<span style="color: #00e8ff">2_</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#journey">Journey</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Jumbotron -->
+    <section class="home" style="background-color: #e3f2fd">
+      <div class="container-lg">
+        <div class="row px-4 pt-4">
+          <div class="col-md-6 text-center">
+            <div class="home-img">
+              <img
+                class="img-fluid rounded-circle img-thumbnail shadow"
+                src="/pics/logo.png"
+                alt="logo"
+                width="350"
+                data-aos="zoom-out"
+                data-aos-duration="2000"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 pt-5 order-md-first">
+            <div class="home-text">
+              <p data-aos="fade-right">Hello, We are</p>
+              <h1 class="h1-home"></h1>
+              <h5 class="h5-home"></h5>
+              <p data-aos="fade-right" data-aos-delay="3000">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati quasi dolor alias.
+              </p>
+              <a href="#contact" class="btn px-3 mt-3" data-aos="fade-right" data-aos-delay="3000">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section
+      class="jumbotron text-center mt-6"
+      style="background-color: #e3f2fd"
+    >
+      <img
+        class="img-fluid rounded-circle img-thumbnail shadow-lg"
+        data-aos="zoom-out"
+        data-aos-duration="2000"
+        src="pics/logo.png"
+        alt="logo"
+        width="250"
+      />
+      <h1 class="display-4 mt-3"></h1>
+      <p class="lead"></p>
+      <div
+        class="justify-content-center"
+        data-aos="zoom-in-up"
+        data-aos-delay="3000"
+        data-aos-duration="2000"
+      >
+        <a
+          href="https://www.instagram.com/tekom.f22/"
+          style="text-decoration: none"
+          target="_blank"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            class="bi bi-instagram"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+            />
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/IkhwnYsrh/" class="ms-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            class="bi bi-facebook"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+            />  
+          </svg>
+        </a>
+      </div>
+    </section> -->
+    <!-- <svg
+      id="wave"
+      style="transform: rotate(180deg); transition: 0.3s"
+      viewBox="0 0 1440 490"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+          <stop stop-color="rgba(227, 242, 253, 1)" offset="0%"></stop>
+          <stop stop-color="rgba(227, 242, 253, 1)" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <path
+        style="transform: translate(0, 0px); opacity: 1"
+        fill="url(#sw-gradient-0)"
+        d="M0,0L17.1,8.2C34.3,16,69,33,103,98C137.1,163,171,278,206,294C240,310,274,229,309,179.7C342.9,131,377,114,411,155.2C445.7,196,480,294,514,310.3C548.6,327,583,261,617,228.7C651.4,196,686,196,720,171.5C754.3,147,789,98,823,81.7C857.1,65,891,82,926,73.5C960,65,994,33,1029,57.2C1062.9,82,1097,163,1131,179.7C1165.7,196,1200,147,1234,147C1268.6,147,1303,196,1337,204.2C1371.4,212,1406,180,1440,147C1474.3,114,1509,82,1543,98C1577.1,114,1611,180,1646,212.3C1680,245,1714,245,1749,236.8C1782.9,229,1817,212,1851,187.8C1885.7,163,1920,131,1954,98C1988.6,65,2023,33,2057,49C2091.4,65,2126,131,2160,138.8C2194.3,147,2229,98,2263,81.7C2297.1,65,2331,82,2366,81.7C2400,82,2434,65,2451,57.2L2468.6,49L2468.6,490L2451.4,490C2434.3,490,2400,490,2366,490C2331.4,490,2297,490,2263,490C2228.6,490,2194,490,2160,490C2125.7,490,2091,490,2057,490C2022.9,490,1989,490,1954,490C1920,490,1886,490,1851,490C1817.1,490,1783,490,1749,490C1714.3,490,1680,490,1646,490C1611.4,490,1577,490,1543,490C1508.6,490,1474,490,1440,490C1405.7,490,1371,490,1337,490C1302.9,490,1269,490,1234,490C1200,490,1166,490,1131,490C1097.1,490,1063,490,1029,490C994.3,490,960,490,926,490C891.4,490,857,490,823,490C788.6,490,754,490,720,490C685.7,490,651,490,617,490C582.9,490,549,490,514,490C480,490,446,490,411,490C377.1,490,343,490,309,490C274.3,490,240,490,206,490C171.4,490,137,490,103,490C68.6,490,34,490,17,490L0,490Z"
+      ></path>
+    </svg> -->
+    <!-- Jumbotron End -->
+
+    <!-- About me -->
+    <section id="about" class="text-center">
+      <div class="container pt-5 pb-3">
+        <div class="row mb-3">
+          <div class="col" data-aos="fade-up" data-aos-duration="2000">
+            <h2>About Us</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center text-center">
+        <div
+          class="col-sm-4 mb-5"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="100"
+        >
+          <p>
+            Hi everyone! Disini saya bercerita sedikit tentang project portfolio
+            ini yang dibuat menggunakan html, css framework(bootstarp) dan
+            javascript dengan melihat panduan dari youtube/website, website ini
+            dibuat dengan tujuan pembelajaran bagi saya dan saya ingin berterima
+            kasih kepada Pak Sandhika Galih yang menginspirasi saya membuat
+            portfolio ini berkat beliau lah saya banyak belajar tentang web
+            development, Semoga beliau diberi kesahatan terus agar bisa terus
+            menerus menebar ilmu-ilmunya kepada kami yang sangat bermanfaat ini,
+            Aamiin.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About me End -->
+
+    <!-- Journey -->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#e3f2fd"
+        fill-opacity="1"
+        d="M0,160L20,149.3C40,139,80,117,120,96C160,75,200,53,240,80C280,107,320,181,360,218.7C400,256,440,256,480,224C520,192,560,128,600,101.3C640,75,680,85,720,101.3C760,117,800,139,840,128C880,117,920,75,960,48C1000,21,1040,11,1080,58.7C1120,107,1160,213,1200,213.3C1240,213,1280,107,1320,90.7C1360,75,1400,149,1420,186.7L1440,224L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"
+      ></path>
+    </svg> -->
+    <section id="journey" style="background-color: #e3f2fd">
+      <div class="container pt-5">
+        <div class="row pt-5 text-center">
+          <div class="col" data-aos="zoom-in" data-aos-duration="2000">
+            <h2>My Journey</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center pt-5 pb-5">
+          <div
+            class="col-md-5 mb-4"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+          >
+            <div class="card">
+              <img
+                src="pics/sd.jpg"
+                class="card-img-top"
+                alt="sdn 3 parepare"
+              />
+              <div class="card-body">
+                <a class="text-dark fw-bold text-decoration-none"
+                  >SD NEGERI 3 PAREPARE</a
+                >
+                <p class="card-text">
+                  Disinilah saya bersekolah dijenjang sekolah dasar pada tahun
+                  2010-2016
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-5 mb-4"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+          >
+            <div class="card">
+              <img
+                src="pics/smp.jpg"
+                class="card-img-top"
+                alt="smpn 2 parepare"
+              />
+              <div class="card-body">
+                <a class="text-dark fw-bold text-decoration-none"
+                  >SMP NEGERI 2 PAREPARE</a
+                >
+                <p class="card-text">
+                  Disinilah saya melanjutkan pendidikan saya di jenjang SMP pada
+                  tahun 2016-2018
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-5 mb-4"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+          >
+            <div class="card">
+              <img
+                src="pics/smk.jpg"
+                class="card-img-top"
+                alt="smkn 3 parepare"
+              />
+              <div class="card-body">
+                <a class="text-dark fw-bold text-decoration-none"
+                  >SMK NEGERI 3 PAREPARE</a
+                >
+                <p class="card-text">
+                  Dan disinilah saya melanjutkan pendidikan saya di jenjang SMA
+                  dan dari sinilah awal saya mengenal dunia IT dikarenakan saya
+                  memilih jurusan TKJ pada saat itu pada tahun 2019-2022
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="card">
+              <img src="pics/kuliah.jpg" class="card-img-top" alt="unm" />
+              <div class="card-body">
+                <a class="text-dark fw-bold text-decoration-none"
+                  >UNIVERSITAS NEGERI MAKASSAR</a
+                >
+                <p class="card-text">
+                  Berlanjut ke jenjang perkuliahan, disinilah saya melanjutkan
+                  pendidikan saya di bidang IT dengan bergabung dalam prodi
+                  Teknik Komputer yang saat ini sedang berlangsung 2 semester.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Journey End -->
+
+    <!-- Gallery -->
+    <section id="gallery" style="background-color: #e3f2fd" class="pb-3">
+      <div class="row text-center">
+        <div class="col mt-5 pt-5" data-aos="zoom-in" data-aos-duration="1000">
+          <h2>My Gallery</h2>
+        </div>
+      </div>
+      <div class="row m-5 pb-5 justify-content-center">
+        <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="/pics/gallery/pics1.jpg" alt="pics1" class="img-fluid" />
+        </div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="/pics/gallery/pics2.jpg" alt="pics2" class="img-fluid" />
+        </div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="/pics/gallery/pics3.jpg" alt="pics3" class="img-fluid" />
+        </div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="/pics/gallery/pics4.jpg" alt="pics4" class="img-fluid" />
+        </div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="/pics/gallery/pics5.jpg" alt="pics5" class="img-fluid" />
+        </div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="/pics/gallery/pics6.jpg" alt="pics6" class="img-fluid" />
+        </div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="/pics/gallery/pics7.jpg" alt="pics7" class="img-fluid" />
+        </div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="/pics/gallery/pics8.jpg" alt="pics8" class="img-fluid" />
+        </div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="/pics/gallery/pics9.jpg" alt="pics9" class="img-fluid" />
+        </div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="/pics/gallery/pics10.jpg" alt="pics10" class="img-fluid" />
+        </div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="/pics/gallery/pics11.jpg" alt="pics11" class="img-fluid" />
+        </div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="/pics/gallery/pics12.jpg" alt="pics12" class="img-fluid" />
+        </div>
+      </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#e3f2fd"
+        fill-opacity="1"
+        d="M0,96L16,117.3C32,139,64,181,96,186.7C128,192,160,160,192,122.7C224,85,256,43,288,32C320,21,352,43,384,90.7C416,139,448,213,480,240C512,267,544,245,576,250.7C608,256,640,288,672,298.7C704,309,736,299,768,272C800,245,832,203,864,197.3C896,192,928,224,960,218.7C992,213,1024,171,1056,165.3C1088,160,1120,192,1152,224C1184,256,1216,288,1248,250.7C1280,213,1312,107,1344,85.3C1376,64,1408,128,1424,160L1440,192L1440,0L1424,0C1408,0,1376,0,1344,0C1312,0,1280,0,1248,0C1216,0,1184,0,1152,0C1120,0,1088,0,1056,0C1024,0,992,0,960,0C928,0,896,0,864,0C832,0,800,0,768,0C736,0,704,0,672,0C640,0,608,0,576,0C544,0,512,0,480,0C448,0,416,0,384,0C352,0,320,0,288,0C256,0,224,0,192,0C160,0,128,0,96,0C64,0,32,0,16,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- Gallery End -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container mt-5 mb-5 pb-5">
+        <div class="row text-center">
+          <div class="col mb-5 mt-5">
+            <h2>Contact Us</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div
+              class="alert alert-success alert-dismissible fade show d-none my-alert"
+              role="alert"
+            >
+              <strong>Terima kasih!</strong> Pesan anda sudah diterima.
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+            <form name="submit-to-google-sheet">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="name"
+                  name="nama"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="email"
+                  name="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea
+                  class="form-control"
+                  id="pesan"
+                  rows="3"
+                  name="pesan"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-kirim">Kirim</button>
+              <button
+                class="btn btn-loading d-none"
+                type="button"
+                style="background-color: #00e8ff"
+              >
+                <span
+                  class="spinner-border spinner-border-sm"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                Loading...
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact End -->
+
+    <!-- Footer -->
+    <footer class="text-center p-5" style="background-color: #e3f2fd">
+      <p>
+        Created with ❤ by klp2
+        <a
+          href="https://www.instagram.com/tekom.f22/"
+          target="_blank"
+          class="title fw-bold text-decoration-none"
+          >Tekom F22
+        </a>
+      </p>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyy_Tndig5SOSsjh3cWx1DJLJ_JDbNPyng4rtVtyiQEZQhEg_NI1jO_WycT8Taj9243/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol kirim diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            // tampilkan alert
+            myAlert.classList.toggle("d-none");
+            // reset formnya
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".h1-home", {
+        duration: 2.5,
+        delay: 0.5,
+        text: "Kelompok 2",
+      });
+    </script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".h5-home", {
+        duration: 2.5,
+        delay: 2.5,
+        text: "Computer Engineering | University Of Makassar",
+      });
+    </script>
+    <div id="button" class="button visually-hidden">
+      <a href="#"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </body>
+</html>
