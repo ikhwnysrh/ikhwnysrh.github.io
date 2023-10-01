@@ -1,6 +1,5 @@
 #about{
     color: #fff;
-    backdrop-filter: blur(10px);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -20,10 +19,12 @@
 }
 
 .btn{
-    background-color: #00e8ff;
+    background-color: #00acff;
+    color: #fff;
 }
 .btn:hover{
-    background-color: #9cf7ff;
+    background-color: #0787c7;
+    color: #fff;
 }
 #journey {
     padding-bottom: 1rem;
@@ -34,15 +35,58 @@
     bottom: 20px;
     right: 20px;
     color: #fff;
-    background: #00e8ff;
+    background: #00acff;
     padding: 7px 12px;
     font-size: 18px;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.15);
 }
 .button a:hover{
-    background-color: #9cf7ff;
+    background-color: #0787c7;
 }
 div ul .nav-item a:hover{
-    color: #00e8ff;
+    color: #00acff;
+}
+
+.button-53 {
+    background-color: #00acff;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    width: 140px;
+    margin-top: 30px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+  
+.button-53:focus {
+    outline: 0;
+}
+  
+.button-53:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #000000;
+    bottom: 5px;
+    right: 5px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
+  
+.button-53:hover:after {
+    bottom: 2px;
+    left: 2px;
 }

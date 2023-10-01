@@ -24,9 +24,9 @@
   <body>
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top py-3">
-      <div class="container">
+      <div class="container px-5">
         <a class="navbar-brand fw-bolder" href="#"
-          >Klp<span style="color: #00e8ff">2_</span></a
+          >Klp<span style="color: #00acff">2_</span></a
         >
         <button
           class="navbar-toggler"
@@ -40,7 +40,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto gap-2" style="font-weight: 500;">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
@@ -63,16 +63,16 @@
     <!-- Navbar End -->
 
     <!-- Jumbotron -->
-    <section class="home" style="background-color: #e3f2fd">
+    <section class="home" style="background-color: #fff">
       <div class="container-lg">
-        <div class="row px-4 pt-2">
-          <div class="col-md-6 pt-4 text-center">
+        <div class="row px-5 pt-2">
+          <div class="col-md-6 pt-2 text-end">
             <div class="home-img">
               <img
-                class="img-fluid-lg rounded-circle img-thumbnail shadow"
-                src="pics/gallery/logo2.jpg"
+                class="img-fluid"
+                src="pics/gallery/logo6.jpg"
                 alt="logo"
-                width="250"
+                width="380"
                 data-aos="zoom-out"
                 data-aos-duration="2000"
               />
@@ -81,12 +81,16 @@
           <div class="col-md-6 pt-5 order-md-first">
             <div class="home-text">
               <h5 data-aos="fade-right">Hello, We are</h5>
-              <h1 class="h1-home"></h1>
+              <h1 class="h1-home" style="color: #00acff;"></h1>
               <h5 class="h5-home"></h5>
               <p data-aos="fade-right" data-aos-delay="2000">
-                We are Makassar State University Students who like and are interested in Web Development
+                We are Makassar State University Students who like and are
+                interested in Web Development
               </p>
-              <a href="#contact" class="btn px-3" data-aos="fade-right" data-aos-delay="2000">Contact Us</a>
+              <button class="button-53" data-aos="fade-right" data-aos-delay="2000"><a href="#contact"></a>Contact Us</button>
+              <!-- <a href="#contact" data-aos="fade-right" data-aos-delay="2000"
+                ><button class="button-56" role="button">Contact Us</button></a
+              > -->
             </div>
           </div>
         </div>
@@ -166,7 +170,11 @@
     <!-- Jumbotron End -->
 
     <!-- About me -->
-    <section id="about" class="text-center" style="background-image: url(pics/gallery/bg-about3.jpg);">
+    <section
+      id="about"
+      class="text-center"
+      style="background-image: url(pics/gallery/bg-about3.jpg)"
+    >
       <div class="container pt-5 pb-3">
         <div class="row mb-3">
           <div class="col" data-aos="fade-up" data-aos-duration="2000">
@@ -500,6 +508,6 @@
     </script>
     <div id="button" class="button visually-hidden">
       <a href="#"><i class="fas fa-arrow-up"></i></a>
-    </div>  
+    </div>
   </body>
 </html>
