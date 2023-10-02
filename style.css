@@ -31,6 +31,9 @@
     background-color: #0787c7;
     color: #fff;
 }
+#btn-kirim{
+    border-radius: 15px;
+}
 .card:hover{
     color: #00acff;
     margin: 1px;
