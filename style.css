@@ -10,11 +10,11 @@
     background-position: center;
     background-attachment: fixed;
 }
+.icon:hover{
+    padding: 3px;
+}
 #navbar{
     margin-top: 12px;
-}
-.h1-home{
-    font-size: 30px;
 }
 
 .home{
