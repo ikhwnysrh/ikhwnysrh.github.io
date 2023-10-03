@@ -23,16 +23,17 @@
     padding-bottom: 190px;
 }
 
-.btn{
-    background-color: #00acff;
-    color: #fff;
-}
 .btn:hover{
     background-color: #0787c7;
     color: #fff;
 }
 #btn-kirim{
+    background-color: #00acff;
+    color: #fff;
     border-radius: 15px;
+}
+#btn-kirim:hover{
+    background-color: #0787c7;
 }
 .card:hover{
     color: #00acff;
@@ -98,4 +99,7 @@ div ul .nav-item a:hover{
 .button-53:hover:after {
     bottom: 2px;
     left: 2px;
+}
+.text-footer:hover{
+    padding-left: 3px;
 }

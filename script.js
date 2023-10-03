@@ -7,7 +7,7 @@ window.onscroll = function () {
       document.body.scrollTop > 20 ||
       document.documentElement.scrollTop > 20
     ) {
-      document.getElementById("navbar").style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+      document.getElementById("navbar").style.backgroundColor = "rgba(255, 255, 255, 0.7)";
       document.getElementById("navbar").style.backdropFilter = "blur(3px)";
       document.getElementById("navbar").style.marginTop = "0"; 
       document.getElementById("navbar").style.boxShadow = "0 1px 2px rgba(0, 0, 0, 0.2)";
