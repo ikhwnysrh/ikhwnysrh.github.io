@@ -46,9 +46,9 @@
     right: 20px;
     color: #fff;
     background: #00acff;
-    padding: 9px 12px;
+    padding: 11px 13px;
     font-size: 18px;
-    border-radius: 6px;
+    border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.15);
 }
 .button a:hover{
@@ -105,4 +105,8 @@ div ul .nav-item a:hover{
 }
 .text-footer:hover{
     padding-left: 3px;
+}
+#darkModeToggle{
+    width: 40px;
+    height: 20px;
 }
