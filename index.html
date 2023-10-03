@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -53,6 +53,24 @@
             <li class="nav-item">
               <a class="nav-link" href="#kontak">Kontak</a>
             </li>
+
+            <div class="form-check form-switch ms-2 mt-2 me-3">
+              <label class="form-check-label ms-1" for="lightSwitch">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-brightness-high"
+                  viewBox="0 0 18 18"
+                >
+                  <path
+                    d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                  />
+                </svg>
+              </label>
+              <input id="darkModeToggle" class="form-check-input" type="checkbox" />
+            </div>
           </ul>
         </div>
       </div>
@@ -60,7 +78,7 @@
     <!-- Navbar End -->
 
     <!-- Jumbotron -->
-    <section class="home" style="background-color: #fff">
+    <section class="home">
       <div class="container-lg">
         <div class="row px-4 pt-2">
           <div class="col-md-6 pt-2 text-end">
@@ -108,7 +126,7 @@
     <!-- Jumbotron End -->
 
     <!-- About -->
-    <section id="about" class="about" style="background-color: #fff">
+    <section id="about" class="about">
       <div class="container-lg">
         <div class="row px-4 pt-2">
           <div class="col-md-6 pt-5 order-md-first">
@@ -116,14 +134,14 @@
               <h5 class="pt-5" data-aos="fade-right" style="color: #00acff">
                 Tentang Kami
               </h5>
-              <h1 class="h1" data-aos="fade-right">
+              <h1 class="h1" data-aos="fade-right" style="color: var(--bs-light-text-emphasis);">
                 Yuk, berkenalan dengan kami!
               </h1>
-              <p class="fs-5" data-aos="fade-right">
+              <p class="fs-5" data-aos="fade-right" style="color: var(--bs-light-text-emphasis);">
                 Hai, kami dari Kelompok 2 yang memiliki minat dalam pengembangan
                 web serta desain antarmuka pengguna
               </p>
-              <p class="fs-5" data-aos="fade-right">
+              <p class="fs-5" data-aos="fade-right" style="color: var(--bs-light-text-emphasis);">
                 Dengan kombinasi keterampilan teknis dan kreativitas, kami mampu
                 membuat aplikasi web yang menarik, responsif, dan fungsional.
               </p>
@@ -131,7 +149,7 @@
           </div>
           <div class="col-md-6 pt-3 ps-4 order-md-first">
             <div class="home-text">
-              <h2 class="text-center mb-4 pt-5 mt-5" data-aos="fade-right">
+              <h2 class="text-center mb-4 pt-5 mt-5" data-aos="fade-right" style="color: var(--bs-light-text-emphasis);">
                 Keahlian
               </h2>
               <div class="mb-5 text-center" data-aos="fade-right">
@@ -594,6 +612,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/TextPlugin.min.js"></script>
+    <script src="switch.js"></script>
     <!-- <script>
       gsap.registerPlugin(TextPlugin);
       gsap.to(".h1-home", {
@@ -611,7 +630,7 @@
       });
     </script> -->
     <div id="button" class="button visually-hidden">
-      <a href="#"><i class="fas fa-arrow-up"></i></a>
+      <a href="#"><i class="fa-solid fa-rocket fa-lg"></i></a>
     </div>
   </body>
 </html>
