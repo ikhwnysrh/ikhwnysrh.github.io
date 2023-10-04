@@ -46,6 +46,7 @@
     transform: scale(1.1);
 }
 .button a{
+    z-index: 99;
     transition: ease-in-out;
     position: fixed;
     bottom: 20px;
