@@ -6,6 +6,7 @@
     padding-right: 6px;
 }
 #project{
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -35,10 +36,10 @@
 #btn-kirim:hover{
     background-color: #0787c7;
 }
-.card:hover{
+/* .card:hover{
     color: #00acff;
     margin: 1px;
-}
+} */
 .button a{
     transition: ease-in-out;
     position: fixed;
