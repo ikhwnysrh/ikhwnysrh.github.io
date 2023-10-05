@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 #about{
     color: #000;
     padding-top: 2rem;

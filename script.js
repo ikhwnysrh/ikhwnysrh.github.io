@@ -76,4 +76,4 @@ checkDarkMode();
         toggleButton.click();
       }
     });
-  });
+  }); 
