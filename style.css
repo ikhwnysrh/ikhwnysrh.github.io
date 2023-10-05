@@ -132,9 +132,9 @@ div ul .nav-item a:hover{
     top: 0;
     left: 0;
     width: 100%;
-    color: #00acff;
+    color: #000;
     height: 100%;
-    background-color: #fff;
+    background-color: #00acff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,7 +159,7 @@ div ul .nav-item a:hover{
   
   #loading-screen {
     /* Properti CSS lainnya... */
-    animation: fadeIn 0.7s ease-in-out; /* Terapkan animasi fadeIn selama 0.5 detik */
+    animation: fadeIn 0.2s ease-in-out; /* Terapkan animasi fadeIn selama 0.5 detik */
   }
 
   /* Animasi saat hilang */
