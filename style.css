@@ -117,6 +117,9 @@ div ul .nav-item a:hover{
     width: 40px;
     height: 20px;
 }
+.form-control{
+    color: #000;
+}
 .text-cr{
     font-size: 13px;
 }

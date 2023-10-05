@@ -55,3 +55,23 @@ darkModeToggle.addEventListener('click', () => {
 
 // Panggil fungsi untuk memeriksa status mode gelap saat halaman dimuat
 checkDarkMode();
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Mendapatkan referensi elemen tombol toggle dan elemen navbar
+    var toggleButton = document.querySelector(".navbar-toggler");
+    var navbarCollapse = document.querySelector(".navbar-collapse");
+
+    // Menambahkan event listener untuk mengatasi klik di mana saja di halaman
+    document.addEventListener("click", function (event) {
+      if (
+        navbarCollapse.classList.contains("show") &&
+        !navbarCollapse.contains(event.target) &&
+        event.target !== toggleButton
+      ) {
+        // Menutup navbar jika sudah terbuka dan pengguna mengklik di luar navbar
+        toggleButton.click();
+      }
+    });
+  });
