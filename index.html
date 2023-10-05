@@ -121,7 +121,7 @@
                 data-aos="fade-right"
                 style="color: var(--bs-light-text-emphasis)"
               >
-                Hallo Semua, kami
+                Hallo Semua 👋, kami
               </h5>
               <h1
                 class="h1-home fs-1 fw-bold"
@@ -144,12 +144,19 @@
                 minat pada Web Development
               </p>
               <a
-                href="#kontak"
+              href="#kontak"
+              class="button-53 mb-5"
+              data-aos="fade-up"
+              data-aos-delay="550"
+              >Contact Us</a
+            >
+              <!-- <a
+                href="#"
                 class="button-53 mb-5"
                 data-aos="fade-up"
                 data-aos-delay="550"
                 >Contact Us</a
-              >
+              > -->
             </div>
           </div>
         </div>
@@ -711,6 +718,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/TextPlugin.min.js"></script>
     <script src="switch.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(window).on('load', function() {
+        $('#loading-text'); // Ganti teks sesuai keinginan Anda
+        // Tambahkan kode lain yang sesuai dengan proses pemuatan data
+        setTimeout(function() {
+          $('#loading-screen').fadeOut('slow', function() {
+            $(this).remove();
+          });
+        }, 1700); // Contoh: Hapus loading screen setelah 2 detik
+      });
+    </script>
+    
+    
+
     <!-- <script>
       gsap.registerPlugin(TextPlugin);
       gsap.to(".h1-home", {
@@ -730,5 +753,13 @@
     <div id="button" class="button visually-hidden">
       <a href="#"><i class="fa-solid fa-rocket fa-lg"></i></a>
     </div>
+    <div id="loading-screen">
+        <span class="sr-only">Loading...</span>
+        <h1 id="loading-text" class="text-center mb-3">Welcome 🙌</h1>
+        <div id="loading-animation" class="spinner-border text-light" role="status"></div>
+    </div>
+    
+    
+    
   </body>
 </html>

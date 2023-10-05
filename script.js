@@ -20,6 +20,7 @@ window.onscroll = function () {
   }
 
 
+
 // Fungsi untuk mengaktifkan mode gelap
 function enableDarkMode() {
   document.documentElement.setAttribute('data-bs-theme', 'dark');
@@ -58,6 +59,7 @@ checkDarkMode();
 
 
 
+// ketika navbar toggle muncul klik dimana saja untuk menutup
   document.addEventListener("DOMContentLoaded", function () {
     // Mendapatkan referensi elemen tombol toggle dan elemen navbar
     var toggleButton = document.querySelector(".navbar-toggler");
