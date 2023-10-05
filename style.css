@@ -132,9 +132,9 @@ div ul .nav-item a:hover{
     top: 0;
     left: 0;
     width: 100%;
-    color: var(--bs-light-text-emphasis);
+    color: #00acff;
     height: 100%;
-    background-color: #00acff;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,8 +143,8 @@ div ul .nav-item a:hover{
   }
   
   #loading-animation {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
   }
 
   /* Animasi saat muncul */
