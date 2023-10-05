@@ -715,10 +715,7 @@
     <script>
       AOS.init();
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/TextPlugin.min.js"></script>
-    <script src="switch.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $(window).on('load', function() {
@@ -728,28 +725,10 @@
           $('#loading-screen').fadeOut('slow', function() {
             $(this).remove();
           });
-        }, 1700); // Contoh: Hapus loading screen setelah 2 detik
+        }, 1500); // Contoh: Hapus loading screen setelah 2 detik
       });
     </script>
-    
-    
 
-    <!-- <script>
-      gsap.registerPlugin(TextPlugin);
-      gsap.to(".h1-home", {
-        duration: 1.5,
-        delay: 0.5,
-        text: "KELOMPOK 2",
-      });
-    </script>
-    <script>
-      gsap.registerPlugin(TextPlugin);
-      gsap.to(".h5-home", {
-        duration: 2.0,
-        delay: 2.0,
-        text: "Computer Engineering | State University Of Makassar",
-      });
-    </script> -->
     <div id="button" class="button visually-hidden">
       <a href="#"><i class="fa-solid fa-rocket fa-lg"></i></a>
     </div>
@@ -758,8 +737,5 @@
         <h1 id="loading-text" class="text-center mb-3">Welcome 🙌</h1>
         <div id="loading-animation" class="spinner-border text-light" role="status"></div>
     </div>
-    
-    
-    
   </body>
 </html>
