@@ -7,9 +7,9 @@ window.onscroll = function () {
       document.body.scrollTop > 20 ||
       document.documentElement.scrollTop > 20
     ) {
-      document.getElementById("navbar").style.backdropFilter = "blur(4px)";
+      document.getElementById("navbar").style.backdropFilter = "blur(5px)";
       document.getElementById("navbar").style.marginTop = "0"; 
-      document.getElementById("navbar").style.boxShadow = "0 1px 2px rgba(0, 0, 0, 0.2)";
+      document.getElementById("navbar").style.boxShadow = "0 1px 3px rgba(0, 0, 0, 0.3)";
       document.getElementById("button").classList.remove('visually-hidden');
     } else {
       document.getElementById("navbar").style.background = "none";
