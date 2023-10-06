@@ -113,7 +113,11 @@ div ul .nav-item a:hover{
     bottom: 2px;
     left: 2px;
 }
+.text-footer{
+  color: #869198;
+}
 .text-footer:hover{
+    color: #fff;
     padding-left: 3px;
 }
 #darkModeToggle{
