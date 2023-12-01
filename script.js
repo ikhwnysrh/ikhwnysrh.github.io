@@ -1,3 +1,4 @@
+// ketika layar di scroll 
 window.onscroll = function () {
     scrollFunction();
   };
@@ -20,19 +21,17 @@ window.onscroll = function () {
   }
 
 
-
+// DarkMode
 // Fungsi untuk mengaktifkan mode gelap
 function enableDarkMode() {
   document.documentElement.setAttribute('data-bs-theme', 'dark');
   localStorage.setItem('theme', 'dark');
 }
-
 // Fungsi untuk menonaktifkan mode gelap
 function disableDarkMode() {
   document.documentElement.setAttribute('data-bs-theme', 'light');
   localStorage.setItem('theme', 'light');
 }
-
 // Fungsi untuk memeriksa status mode gelap saat halaman dimuat
 function checkDarkMode() {
   const savedTheme = localStorage.getItem('theme');
@@ -42,7 +41,6 @@ function checkDarkMode() {
     disableDarkMode();
   }
 }
-
 // Tambahkan event listener untuk tombol toggle
 const darkModeToggle = document.getElementById('darkModeToggle');
 darkModeToggle.addEventListener('click', () => {
@@ -53,10 +51,8 @@ darkModeToggle.addEventListener('click', () => {
     enableDarkMode();
   }
 });
-
 // Panggil fungsi untuk memeriksa status mode gelap saat halaman dimuat
 checkDarkMode();
-
 
 
 // ketika navbar toggle muncul klik dimana saja untuk menutup
