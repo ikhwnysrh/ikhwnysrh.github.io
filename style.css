@@ -134,6 +134,9 @@ div ul .nav-item a:hover{
 .text-cr{
     font-size: 13px;
 }
+.navbar-brand{
+  font-size: 25px;
+}
 
 #loading-screen {
     position: fixed;
