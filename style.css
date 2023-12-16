@@ -19,6 +19,7 @@ html{
 }
 #navbar{
     margin-top: 12px;
+    transition: all 0.2s;
 }
 
 .home{
@@ -51,6 +52,7 @@ html{
     transform: scale(1.1);
 }
 .button a{
+    transition: background 0.5s;
     z-index: 99;
     transition: ease-in-out;
     position: fixed;
