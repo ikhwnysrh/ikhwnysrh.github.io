@@ -10,6 +10,8 @@ html{
 }
 #project{
     height: 100%;
+    background-image: url(pics/gallery/bg-project3.webp);
+    border-image: fill 0 linear-gradient(#0001, #00acff);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -21,6 +23,19 @@ html{
     margin-top: 12px;
     transition: all 0.2s;
 }
+.navbar-brand{
+  padding-right: 520px;
+}
+@media (max-width: 768px) {
+  .navbar-brand{
+    padding-right: 55px;
+  }
+}
+/* @media (min-width: 1024px) {
+  .navbar-brand{
+    padding-right: 520px;
+  }
+} */
 
 .home{
     height: 110vh;
