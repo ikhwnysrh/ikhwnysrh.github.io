@@ -3,8 +3,8 @@ html{
 }
 @media (max-width: 768px) {
   .img-logo{
-    padding-right: 30px;
-    width: 300px;
+    padding-right: 15px;
+    width: 320px;
   }
 }
 #about{
@@ -16,7 +16,7 @@ html{
 }
 @media (max-width: 768px) {
   #about{
-    padding-top: 280px;
+    padding-top: 210px;
   }
 }
 
