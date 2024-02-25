@@ -1,6 +1,12 @@
 html{
     scroll-behavior: smooth;
 }
+@media (max-width: 768px) {
+  .img-logo{
+    padding-right: 30px;
+    width: 300px;
+  }
+}
 #about{
     color: #000;
     padding-top: 2rem;
@@ -8,6 +14,12 @@ html{
     padding-left: 6px;
     padding-right: 6px;
 }
+@media (max-width: 768px) {
+  #about{
+    padding-top: 220px;
+  }
+}
+
 #project{
     height: 100%;
     background-image: url(pics/gallery/bg-project3.webp);
