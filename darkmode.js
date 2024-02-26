@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to toggle icon
     function toggleIcon() {
         if (darkModeToggle.checked) {
-            moonIcon.style.display = 'inline';
-            sunIcon.style.display = 'none';
-        } else {
             moonIcon.style.display = 'none';
             sunIcon.style.display = 'inline';
+        } else {
+            moonIcon.style.display = 'inline';
+            sunIcon.style.display = 'none';
         }
     }
 
