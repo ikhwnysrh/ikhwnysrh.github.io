@@ -18,6 +18,9 @@ html{
   #about{
     margin-top: 160px;
   }
+  form{
+    margin: 15px;
+  }
 }
 
 #project{
@@ -133,7 +136,7 @@ div ul .nav-item a:hover{
 .button-53:after {
     content: '';
     position: absolute;
-    border: 1px solid #000000;
+    border: 1px solid var(--bs-light-text-emphasis);
     bottom: 5px;
     right: 5px;
     width: calc(100% - 1px);
