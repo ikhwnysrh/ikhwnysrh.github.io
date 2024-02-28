@@ -43,7 +43,7 @@ html{
 }
 @media (max-width: 768px) {
   .navbar-brand{
-    padding-right: 120px;
+    padding-right: 75px;
   }
 }
 /* @media (min-width: 1024px) {
