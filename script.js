@@ -23,36 +23,67 @@ window.onscroll = function () {
 
 // DarkMode
 // Fungsi untuk mengaktifkan mode gelap
-function enableDarkMode() {
-  document.documentElement.setAttribute('data-bs-theme', 'dark');
-  localStorage.setItem('theme', 'dark');
-}
-// Fungsi untuk menonaktifkan mode gelap
-function disableDarkMode() {
-  document.documentElement.setAttribute('data-bs-theme', 'light');
-  localStorage.setItem('theme', 'light');
-}
-// Fungsi untuk memeriksa status mode gelap saat halaman dimuat
-function checkDarkMode() {
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    enableDarkMode();
+// function enableDarkMode() {
+//   document.documentElement.setAttribute('data-bs-theme', 'dark');
+//   localStorage.setItem('theme', 'dark');
+// }
+// // Fungsi untuk menonaktifkan mode gelap
+// function disableDarkMode() {
+//   document.documentElement.setAttribute('data-bs-theme', 'light');
+//   localStorage.setItem('theme', 'light');
+// }
+// // Fungsi untuk memeriksa status mode gelap saat halaman dimuat
+// function checkDarkMode() {
+//   const savedTheme = localStorage.getItem('theme');
+//   if (savedTheme === 'dark') {
+//     enableDarkMode();
+//   } else {
+//     disableDarkMode();
+//   }
+// }
+// // Tambahkan event listener untuk tombol toggle
+// const darkModeToggle = document.getElementById('darkModeToggle');
+// darkModeToggle.addEventListener('click', () => {
+//   const currentTheme = document.documentElement.getAttribute('data-bs-theme');
+//   if (currentTheme === 'dark') {
+//     disableDarkMode();
+//   } else {
+//     enableDarkMode();
+//   }
+// });
+// // Panggil fungsi untuk memeriksa status mode gelap saat halaman dimuat
+// checkDarkMode();
+function toggleDarkMode() {
+  const switchElement = document.getElementById('switch');
+  const body = document.body;
+  const moonIcon = document.querySelector('.icon--moon');
+  const sunIcon = document.querySelector('.icon--sun');
+
+  if (switchElement.checked) {
+    body.setAttribute('data-bs-theme', 'dark');
+    localStorage.setItem('darkMode', 'enabled');
   } else {
-    disableDarkMode();
+    body.setAttribute('data-bs-theme', 'light');
+    localStorage.setItem('darkMode', 'disabled');
   }
 }
-// Tambahkan event listener untuk tombol toggle
-const darkModeToggle = document.getElementById('darkModeToggle');
-darkModeToggle.addEventListener('click', () => {
-  const currentTheme = document.documentElement.getAttribute('data-bs-theme');
-  if (currentTheme === 'dark') {
-    disableDarkMode();
-  } else {
-    enableDarkMode();
+
+// Check if dark mode is enabled from local storage
+document.addEventListener('DOMContentLoaded', function () {
+  const darkMode = localStorage.getItem('darkMode');
+  const switchElement = document.getElementById('switch');
+
+  if (darkMode === 'enabled') {
+    switchElement.checked = true;
+    toggleDarkMode();
   }
 });
-// Panggil fungsi untuk memeriksa status mode gelap saat halaman dimuat
-checkDarkMode();
+
+// Listen for change event on the switch
+const switchElement = document.getElementById('switch');
+switchElement.addEventListener('change', toggleDarkMode);
+
+
 
 
 // ketika navbar toggle muncul klik dimana saja untuk menutup
