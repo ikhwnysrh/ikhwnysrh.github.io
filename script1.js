@@ -53,37 +53,59 @@ window.onscroll = function () {
 // });
 // // Panggil fungsi untuk memeriksa status mode gelap saat halaman dimuat
 // checkDarkMode();
-function toggleDarkMode() {
-  const switchElement = document.getElementById('switch');
-  const body = document.body;
-  const moonIcon = document.querySelector('.icon--moon');
-  const sunIcon = document.querySelector('.icon--sun');
+// function toggleDarkMode() {
+//   const switchElement = document.getElementById('switch');
+//   const body = document.body;
+//   const moonIcon = document.querySelector('.icon--moon');
+//   const sunIcon = document.querySelector('.icon--sun');
 
-  if (switchElement.checked) {
-    body.setAttribute('data-bs-theme', 'dark');
-    localStorage.setItem('darkMode', 'enabled');
-  } else {
-    body.setAttribute('data-bs-theme', 'light');
-    localStorage.setItem('darkMode', 'disabled');
+//   if (switchElement.checked) {
+//     body.setAttribute('data-bs-theme', 'dark');
+//     localStorage.setItem('darkMode', 'enabled');
+//   } else {
+//     body.setAttribute('data-bs-theme', 'light');
+//     localStorage.setItem('darkMode', 'disabled');
+//   }
+// }
+
+// // Check if dark mode is enabled from local storage
+// document.addEventListener('DOMContentLoaded', function () {
+//   const darkMode = localStorage.getItem('darkMode');
+//   const switchElement = document.getElementById('switch');
+
+//   if (darkMode === 'enabled') {
+//     switchElement.checked = true;
+//     toggleDarkMode();
+//   }
+// });
+
+// // Listen for change event on the switch
+// const switchElement = document.getElementById('switch');
+// switchElement.addEventListener('change', toggleDarkMode);
+const toggleSwitch = document.querySelector('.input');
+const currentTheme = localStorage.getItem('theme');
+
+// Check current theme on page load
+if (currentTheme) {
+  document.documentElement.setAttribute('data-bs-theme', currentTheme);
+  if (currentTheme === 'light') {
+    toggleSwitch.checked = true;
   }
 }
 
-// Check if dark mode is enabled from local storage
-document.addEventListener('DOMContentLoaded', function () {
-  const darkMode = localStorage.getItem('darkMode');
-  const switchElement = document.getElementById('switch');
-
-  if (darkMode === 'enabled') {
-    switchElement.checked = true;
-    toggleDarkMode();
+// Toggle theme function
+function toggleTheme() {
+  if (toggleSwitch.checked) {
+    document.documentElement.setAttribute('data-bs-theme', 'light');
+    localStorage.setItem('theme', 'light');
+  } else {
+    document.documentElement.setAttribute('data-bs-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
   }
-});
+}
 
-// Listen for change event on the switch
-const switchElement = document.getElementById('switch');
-switchElement.addEventListener('change', toggleDarkMode);
-
-
+// Event listener for checkbox change
+toggleSwitch.addEventListener('change', toggleTheme);
 
 
 // ketika navbar toggle muncul klik dimana saja untuk menutup
