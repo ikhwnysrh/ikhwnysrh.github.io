@@ -126,3 +126,9 @@ toggleSwitch.addEventListener('change', toggleTheme);
       }
     });
   }); 
+
+    // Panggil fungsi saat halaman dimuat
+    window.onload = function() {
+      // Atur posisi scroll ke atas
+      window.scrollTo(0, 0);
+  };
