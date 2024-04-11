@@ -1,14 +1,14 @@
 html{
     scroll-behavior: smooth;
 }
-body{
+/* body{
   touch-action: none;
 }
 @media (max-width: 768px) {
   body {
       touch-action: none;
   }
-}
+} */
 @media (max-width: 768px) {
   .img-logo{
     padding-right: 10px;
