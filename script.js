@@ -1,4 +1,8 @@
 // ketika layar di scroll 
+document.addEventListener('gesturestart', function (e) {
+  e.preventDefault();
+});
+
 window.onscroll = function () {
     scrollFunction();
   };
