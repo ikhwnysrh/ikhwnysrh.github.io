@@ -22,9 +22,21 @@ html{
     padding-left: 6px;
     padding-right: 6px;
 }
+.icons i{
+  font-size: 50px;
+}
+.icons i:hover{
+  scale: 1.2;
+}
+.icons img:hover{
+  scale: 1.2;
+}
 @media (max-width: 768px) {
   #about{
     margin-top: 100px;
+  }
+  .icons i{
+    font-size: 50px;
   }
   form{
     margin: 15px;
