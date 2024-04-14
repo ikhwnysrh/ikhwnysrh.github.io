@@ -3,7 +3,7 @@
 html{
     scroll-behavior: smooth;
   }
-  
+
 @media (max-width: 768px) {
   .img-logo{
     padding-right: 10px;
@@ -207,6 +207,7 @@ div ul .nav-item a:hover{
 } */
 .typed::after {
 	content: '|';
+  font-weight: bolder;
 	display: inline;
 	-webkit-animation: blink 0.7s infinite;
 	-moz-animation: blink 0.7s infinite;
@@ -215,6 +216,7 @@ div ul .nav-item a:hover{
 
 /*Removes cursor that comes with typed.js*/
 .typed-cursor{
+
   opacity: 0;
 	display: none;
 }
