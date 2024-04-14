@@ -108,6 +108,11 @@ html{
 }
 .card{
     overflow: hidden;
+    border-radius: 20px;
+}
+.card-body{
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 .card .card-img-top{
     transition: 0.5s all ease-in-out;
