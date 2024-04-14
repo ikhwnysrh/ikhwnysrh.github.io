@@ -57,6 +57,11 @@ html{
     width: 60px;
     height: 60px;
   }
+  .icons .tailwind{
+    width: 65px;
+    height: 65px;
+    margin-top: 48px;
+  }
   .big img{
     height: 50px;
     width: 50px;
