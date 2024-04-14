@@ -20,8 +20,18 @@ html{
 .icons{
   padding: 35px 200px;
 }
-.icons i{
-  font-size: 70px;
+.icons img{
+  width: 100px;
+  height: 100px;
+}
+/* .small img{
+  width: 110px;
+  height: 110px;
+} */
+.big img{
+  height: 85px;
+  width: 85px;
+  margin-top: 8px;
 }
 .icons i:hover{
   scale: 1.2;
@@ -41,10 +51,18 @@ html{
     padding: 50px 0;
   }
   .icons{
-    padding: 25px 0;
+    padding: 20px 12px;
   }
-  .icons i{
-    font-size: 50px;
+  .icons img{
+    width: 60px;
+    height: 60px;
+  }
+  .big img{
+    height: 50px;
+    width: 50px;
+  }
+  .small img{
+    margin-top: 3px;
   }
   form{
     margin: 15px;
