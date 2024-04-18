@@ -4,7 +4,7 @@ html{
     scroll-behavior: smooth;
   }
 body{
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -542,6 +542,17 @@ div ul .nav-item a:hover{
     transition: all 0.3s ease-in-out;
     border: 1px solid var(--bs-light-text-emphasis);
   }
+  .example-1 .icon-content .link-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+  }
   .example-1 .icon-content .link:hover {
     box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
   }
@@ -552,13 +563,25 @@ div ul .nav-item a:hover{
   .example-1 .icon-content .link[data-social="instagram"]:hover {
     color: #dc2743;
   }
-  .example-1 .icon-content .link[data-social="facebook"]:hover {
-    color: #0163E0;
+  .example-1 .icon-content .link[data-social="linkedin"]:hover {
+    color: #0077B5;
   }
   .example-1 .icon-content .link[data-social="youtube"]:hover {
     color: #cd242b;
   }
   .example-1 .icon-content .link[data-social="github"]:hover {
+    color: #242c34;
+  }
+  .example-1 .icon-content .link-footer[data-social="instagram"]:hover {
+    color: #dc2743;
+  }
+  .example-1 .icon-content .link-footer[data-social="linkedin"]:hover {
+    color: #0077B5;
+  }
+  .example-1 .icon-content .link-footer[data-social="youtube"]:hover {
+    color: #cd242b;
+  }
+  .example-1 .icon-content .link-footer[data-social="github"]:hover {
     color: #242c34;
   }
   
