@@ -77,3 +77,37 @@ toggleSwitch.addEventListener('change', toggleTheme);
       // Atur posisi scroll ke atas
       window.scrollTo(0, 0);
   };
+
+  function projectCarousel() {
+    let certificateCarousel = document.querySelector(".certificate-carousel");
+    let projectCarousel = document.querySelector(".project-carousel");
+    let certificate = document.querySelector(".certificate");
+    let project = document.querySelector(".project");
+
+    certificate.attributes.removeNamedItem("style");
+    project.style.color = "#00acff";
+    project.style.borderBottom = "#00acff 4px solid";
+    certificateCarousel.classList.add("d-none");
+    certificateCarousel.classList.remove("d-block");
+    projectCarousel.classList.remove("d-none");
+    projectCarousel.classList.add("d-block");
+  }
+  function certifCarousel() {
+    let certificateCarousel = document.querySelector(".certificate-carousel");
+    let projectCarousel = document.querySelector(".project-carousel");
+    let certificate = document.querySelector(".certificate");
+    let project = document.querySelector(".project");
+
+    project.attributes.removeNamedItem("style");
+    certificate.style.color = "#00acff";
+    certificate.style.borderBottom = "#00acff 4px solid";
+    certificateCarousel.classList.remove("d-none");
+    certificateCarousel.classList.add("d-block");
+    projectCarousel.classList.add("d-none");
+  }
+
+
+
+  
+  
+  

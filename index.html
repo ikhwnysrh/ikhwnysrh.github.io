@@ -71,7 +71,7 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#project">Project</a>
+              <a class="nav-link" href="#project">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#kontak">Contact</a>
@@ -428,13 +428,24 @@
     <section id="project">
       <div class="pt-5 pb-2 text-center">
         <div class="col" data-aos="fade-up" data-aos-duration="1000">
-          <h5 class="pt-4" style="color: #00acff">Project</h5>
-          <h1 style="color: #fff">Recent Projects</h1>
+          <h5 class="pt-4" style="color: #00acff">Portfolio</h5>
+          <h1 style="color: #fff">
+            <span
+              style="color: #00acff; border-bottom: #00acff 5px solid;"
+              class="project"
+              onclick="projectCarousel()"
+              >Projects</span
+            >
+            &
+            <span class="certificate" onclick="certifCarousel()"
+              >Certificates</span
+            >
+          </h1>
         </div>
       </div>
       <div
         id="carouselExampleControls"
-        class="carousel carousel-dark slide"
+        class="project-carousel carousel carousel-dark slide"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner pb-5">
@@ -750,8 +761,121 @@
           ></span>
         </button>
       </div>
+      <!-- Proyek End -->
+
+      <!-- Certificate -->
+      <div
+        id="carouselExampleControlsCertif"
+        class="certificate-carousel carousel carousel-dark slide d-none"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner pb-5">
+          <div class="carousel-item active">
+            <div class="row">
+              <div
+                class="col-lg-12 d-flex justify-content-center p-5 pb-5 mb-5"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+                <div class="card" style="width: 500px">
+                  <img
+                    src="pics/gallery/sertifikat/sertif1.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title my-2">RevoU Software Engineering Fundamental Course</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div
+                class="col-lg-12 d-flex justify-content-center p-5 pb-5 mb-5"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+                <div class="card" style="width: 500px">
+                  <img
+                    src="pics/gallery/sertifikat/sertif2.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title my-2">Sertifikat Kelas Belajar HTML dan CSS</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div
+                class="col-lg-12 d-flex justify-content-center p-5 pb-5 mb-5"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+                <div class="card" style="width: 500px">
+                  <img
+                    src="pics/gallery/sertifikat/sertif3.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title my-2">Sertifikat Kelas Belajar Dasar Javascript</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControlsCertif"
+          data-bs-slide="prev"
+        >
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="57"
+              height="59"
+              fill="currentColor"
+              class="bi bi-chevron-left"
+              viewBox="0 0 23 19"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              /></svg
+          ></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControlsCertif"
+          data-bs-slide="next"
+        >
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="34"
+              height="44"
+              fill="currentColor"
+              class="bi bi-chevron-right"
+              viewBox="0 0 9 18"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              /></svg
+          ></span>
+        </button>
+      </div>
     </section>
-    <!-- Proyek End -->
+    <!-- Certif End -->
 
     <!-- Kontak -->
     <section id="kontak">
@@ -1115,46 +1239,6 @@
               </li>
             </ul>
           </main>
-          <!-- <a
-            class="btn btn-outline-light btn-floating m-1 rounded-circle"
-            href="#"
-            role="button"
-            data-aos="zoom-in"
-            data-aos-duration="400"
-            ><i class="fab fa-facebook-f"></i>
-          </a>
-          <a
-            class="btn btn-outline-light btn-floating m-1 rounded-circle"
-            href="#"
-            role="button"
-            data-aos="zoom-in"
-            data-aos-duration="600"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a
-            class="btn btn-outline-light btn-floating m-1 rounded-circle"
-            href="#"
-            role="button"
-            data-aos="zoom-in"
-            data-aos-duration="800"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            class="btn btn-outline-light btn-floating m-1 rounded-circle"
-            href="#"
-            role="button"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a
-            class="btn btn-outline-light btn-floating m-1 rounded-circle"
-            href="#"
-            role="button"
-            data-aos="zoom-in"
-            data-aos-duration="1200"
-            ><i class="fab fa-github"></i
-          ></a> -->
         </section>
       </div>
       <div class="text-cr text-center pb-5">
