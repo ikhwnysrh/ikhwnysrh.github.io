@@ -18,7 +18,8 @@ body{
 }
 #about{
     color: #000;
-    margin-top: 150px;
+    margin-top: 50px;
+    padding-top: 100px;
     /* padding-bottom: 2rem; */
     /* padding-left: 6px;
     padding-right: 6px; */
@@ -49,10 +50,8 @@ body{
 
 @media (max-width: 768px) {
   #about{
-    margin-top: 150px;
-  }
-  .skills{
-    /* padding: 10px 0; */
+    margin-top: 70px;
+    padding-top: 80px;
   }
   .icons{
     padding: 20px 12px;
