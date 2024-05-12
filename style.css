@@ -18,10 +18,10 @@ body{
 }
 #about{
     color: #000;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 6px;
-    padding-right: 6px;
+    margin-top: 150px;
+    /* padding-bottom: 2rem; */
+    /* padding-left: 6px;
+    padding-right: 6px; */
 }
 .icons{
   padding: 35px 200px;
@@ -49,10 +49,10 @@ body{
 
 @media (max-width: 768px) {
   #about{
-    margin-top: 100px;
+    margin-top: 150px;
   }
   .skills{
-    padding: 10px 0;
+    /* padding: 10px 0; */
   }
   .icons{
     padding: 20px 12px;
@@ -101,22 +101,26 @@ body{
     padding: 3px;
 }
 #navbar{
-    margin-top: 12px;
-    transition: all 0.3s;
+  padding: 15px 77px;
+  transition: all 0.3s;
 }
 .navbar-brand{
-  padding-right: 520px;
+  margin-right: 500px;
 }
 @media (max-width: 768px) {
+  #navbar{
+    padding: 8px 16px;
+  }
   #navbar .navbar-brand{
-    padding-right: 40px;
+    font-size: 22px;
+    margin-right: 40px;
   }
 }
 
 .home{
-    height: 110vh;
-    padding-top: 110px;
-    padding-bottom: 190px;
+    /* height: 100vh; */
+    margin-top: 110px;
+    /* margin-bottom: 190px; */
 }
 .h1-home{
   font-size: 43px;
@@ -353,8 +357,8 @@ div ul .nav-item a:hover{
     font-size: 17px;
     position: relative;
     display: inline-block;
-    width: 57px;
-    height: 27px;
+    width: 55px;
+    height: 25px;
   }
   
   .switch input {
@@ -378,8 +382,8 @@ div ul .nav-item a:hover{
   .slider:before {
     position: absolute;
     content: "";
-    height: 23px;
-    width: 23px;
+    height: 21px;
+    width: 21px;
     border-radius: 20px;
     left: 2px;
     bottom: 2px;
@@ -393,8 +397,8 @@ div ul .nav-item a:hover{
     top: 6px;
     left: 36px;
     z-index: 1;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
   }
   
   .moon svg {
@@ -403,8 +407,8 @@ div ul .nav-item a:hover{
     top: 5px;
     left: 5px;
     z-index: 1;
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
   }
   
   /* .switch:hover */.sun svg {
