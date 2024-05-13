@@ -99,20 +99,19 @@ body{
 .icon:hover{
     padding: 3px;
 }
+.navbar-brand{
+  font-size: 27px;
+}
 #navbar{
   padding: 15px 77px;
   transition: all 0.3s;
 }
-.navbar-brand{
-  margin-right: 500px;
-}
 @media (max-width: 768px) {
   #navbar{
-    padding: 8px 16px;
+    padding: 10px 16px;
   }
   #navbar .navbar-brand{
-    font-size: 22px;
-    margin-right: 40px;
+    font-size: 24px;
   }
 }
 
@@ -237,9 +236,6 @@ div ul .nav-item a:hover{
 .text-cr{
     font-size: 13px;
 }
-.navbar-brand{
-  font-size: 25px;
-}
 
 .typed::after {
 	content: '|';
@@ -353,6 +349,8 @@ div ul .nav-item a:hover{
   }
   
    .switch {
+    margin-top: 6px;
+    margin-right: 10px;
     font-size: 17px;
     position: relative;
     display: inline-block;
