@@ -105,9 +105,3 @@ toggleSwitch.addEventListener('change', toggleTheme);
     certificateCarousel.classList.add("d-block");
     projectCarousel.classList.add("d-none");
   }
-
-
-
-  
-  
-  
