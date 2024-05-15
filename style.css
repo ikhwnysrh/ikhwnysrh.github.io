@@ -91,6 +91,11 @@ body{
     background-attachment: fixed;
     transition: all 0.2s;
 }
+@media (min-width: 1024px) {
+  #project {
+    padding: 0 280px;
+  }
+}
 #project .project{
   cursor: pointer;
   transition: ease-in-out 0.3s;
@@ -164,9 +169,22 @@ body{
   height: 391px;
   width: 460px;
 }
+.arrows-left, .arrows-right{
+  width: 34px;
+}
 @media (max-width: 768px) {
   .thecatat{
     height: 315px;
+  }
+  .arrows-left{
+    width: 25px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+  .arrows-right{
+    width: 25px;
+    margin-left: 20px;
+    margin-bottom: 40px;
   }
 }
 
