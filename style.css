@@ -107,6 +107,10 @@ body{
 .navbar-brand{
   font-size: 27px;
 }
+.entities-text{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
 #navbar{
   padding: 15px 77px;
   transition: all 0.3s;
